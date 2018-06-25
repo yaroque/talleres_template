@@ -1,6 +1,7 @@
 header {
   background: #2c3e50;
   color: #fff;
+  height: 73px;
 }
 
 footer {
@@ -18,7 +19,11 @@ footer {
 
 .content-body {
   padding-bottom:95px;
-  min-height: 768px;
+  font-size: 16px !important;
+}
+
+.content-body p {
+  font-size: 16px !important;
 }
 
 .navbar {
@@ -26,9 +31,30 @@ footer {
   min-height: 0;
 }
 
+.navbar-brand {
+  padding-left: 0;
+}
+
+.navbar-toggle {
+    height: 73px;
+  }
+
+.nav-tabs a strong {
+  font-size: 18px
+}
+
 h1 {
   font-size: 35px;
   margin-top: 20px;
+}
+
+h2 {
+  font-size: 33px;
+  margin-top: 15px;
+}
+
+h2 small {
+  font-size: 16px;
 }
 
 h3 {
@@ -41,15 +67,28 @@ h4 {
   margin-top: 25px;
 }
 
-ul.nav li p {
-  padding: 11px 1px 0;
+
+
+ul.nav li.divider p {
+  padding: 12px 1px 0;
   margin-bottom: 0;
+  font-weight: bold;
 }
 
-ul.bcrumb li a {
+ul.bcrumb > li > a {
   padding-left: 5px;
   padding-right: 5px;
 }
+
+@media (max-width: 576px) {
+    ul.nav li.divider {
+        display: none
+    }
+}
+
+/*.dropdown-menu > li > a {
+    padding: 8px 16px;
+}*/
 
 .panel-inverse .panel-heading {
   background: #34495e;
@@ -97,12 +136,20 @@ ul.bcrumb li a {
   background: #2ecc71 !important;
 }
 
+.image {
+  margin: 1px auto;
+}
+
 .img {
     width: 64px;
 }
 
 .logo {
     height: 48px;
+}
+
+.mb-md {
+  margin-bottom:65px;
 }
 
 .mt-md {
@@ -183,4 +230,45 @@ section {
     color: #9aa7af;
     margin-bottom: 40px;
     font-size: 16px;
+}
+
+.signal {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    font-family: Lato,Helvetica,Arial,sans-serif;
+    font-size: 0;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    /*background-color: #1abc9c;*/
+    border-radius: 50%;
+}
+
+.signal-danger {
+  background:#e74c3c;
+}
+
+.notify {
+  padding: 7px 10px 0;
+  margin-bottom: 18px;
+  border-radius: 2px;
+}
+
+.notify p {
+  padding: 0;
+  margin: 0;
+  font-size: 18px !important;
+  line-height: 1;
+}
+
+.notify-error {
+  border-left: 3px solid #e74c3c;
+  background: #f2dede;
+}
+
+.notify-warning {
+  border-left: 3px solid #f1c40f;
+  background: #fcf8e3;
 }
