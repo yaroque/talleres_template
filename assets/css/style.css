@@ -272,3 +272,11 @@ section {
   border-left: 3px solid #f1c40f;
   background: #fcf8e3;
 }
+
+h1.text-lg {
+  font-size: 64px;
+}
+
+h2.tile-title {
+    font-size: 48px;
+}
